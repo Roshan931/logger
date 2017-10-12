@@ -1,6 +1,6 @@
 {
   "name": "logger",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Logs informations, errors and exceptions in console and log files.",
   "main": "index.js",
   "scripts": {
