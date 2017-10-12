@@ -33,3 +33,5 @@ describe('console', function () {
         });
     });
 });
+describe('log files', function () {
+});

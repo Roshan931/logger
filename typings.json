@@ -4,6 +4,7 @@
     "winston": "registry:dt/winston#2.3.0+20170323124512"
   },
   "globalDependencies": {
-    "mocha": "registry:dt/mocha#2.2.5+20170311011848"
+    "mocha": "registry:dt/mocha#2.2.5+20170311011848",
+    "node": "registry:dt/node#7.0.0+20170322231424"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "logger",
+  "name": "wc-logger",
   "version": "0.1.0",
   "description": "Logs informations, errors and exceptions in console and log files.",
   "main": "index.js",
@@ -27,6 +27,7 @@
     "mocha": "^4.0.1",
     "mocha-sinon": "^2.0.0",
     "sinon": "^4.0.1",
-    "test-console": "^1.0.0"
+    "test-console": "^1.0.0",
+    "winston": "^2.4.0"
   }
 }

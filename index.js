@@ -5,12 +5,12 @@ var fs = require("fs");
 var path = require("path");
 var WCLogger = /** @class */ (function () {
     function WCLogger() {
-        var logsDir = path.join(__dirname, 'logs');
+        var logsDir = path.join(path.dirname(require.main ? require.main.filename : process.cwd()), 'logs');
         var infoPath = path.join(logsDir, 'info.log');
         var errorsPath = path.join(logsDir, 'errors.log');
         var exceptionsPath = path.join(logsDir, 'exceptions.log');
         if (!fs.existsSync(logsDir)) {
-            fs.mkdirSync('logs');
+            fs.mkdirSync(logsDir);
         }
         else {
             if (!fs.existsSync(infoPath)) {

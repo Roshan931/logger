@@ -6,14 +6,14 @@ class WCLogger {
     logger: any
 
     constructor() {
-        let logsDir: string = path.join(__dirname, 'logs')
+        let logsDir: string = path.join(path.dirname(require.main ? require.main.filename : process.cwd()), 'logs')
 
         let infoPath: string = path.join(logsDir, 'info.log')
         let errorsPath: string = path.join(logsDir, 'errors.log')
         let exceptionsPath: string = path.join(logsDir, 'exceptions.log')
 
         if (!fs.existsSync(logsDir)) {
-            fs.mkdirSync('logs')
+            fs.mkdirSync(logsDir)
         } else {
             
             if(!fs.existsSync(infoPath)) {
