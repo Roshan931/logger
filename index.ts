@@ -6,16 +6,14 @@ class WCLogger {
     logger: any
 
     constructor() {
-        let logsDir: string = path.join(path.dirname(require.main ? require.main.filename : process.cwd()), 'logs')
+        let infoPath: string = path.join('logs', 'info.log')
+        let errorsPath: string = path.join('logs', 'errors.log')
+        let exceptionsPath: string = path.join('logs', 'exceptions.log')
 
-        let infoPath: string = path.join(logsDir, 'info.log')
-        let errorsPath: string = path.join(logsDir, 'errors.log')
-        let exceptionsPath: string = path.join(logsDir, 'exceptions.log')
-
-        if (!fs.existsSync(logsDir)) {
-            fs.mkdirSync(logsDir)
+        if (!fs.existsSync('logs')) {
+            fs.mkdirSync('logs')
         } else {
-            
+
             if(!fs.existsSync(infoPath)) {
                 let createStream: fs.WriteStream = fs.createWriteStream(infoPath)
                 createStream.end()
