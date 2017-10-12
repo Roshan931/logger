@@ -32,6 +32,7 @@ Whenever an exception is raised, it is automatically logged in logs/exceptions.l
 
 ## Release History
 
+* 0.1.1 Creating logs directory fix
 * 0.1.0 Initial release
 
 ## Contributors
