@@ -11,11 +11,11 @@ Whenever an exception is raised, it is automatically logged in logs/exceptions.l
 
 ## Installation
 
-    npm install logger --save
+    npm install wc-logger --save
 
 ## Usage
 
-    const logger = require('logger')
+    const logger = require('wc-logger')
 
     // Logs to console.info and ./logs/info.log
     logger.info('Simple message')
